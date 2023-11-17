@@ -1,0 +1,207 @@
+.logo{
+    color: #e20010;
+    font-weight: bold;
+    font-size: 24px;
+}
+.header{
+    font-size: large;
+    font-weight: bold;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+}
+.testing{
+    color: blue;
+}
+.container-header{
+    margin-top: 30px;
+}
+.title-data{
+    display: inline-block;
+  }
+  .title{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+      typing 3s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .arrow-area Button{
+   color: blue;
+   font-weight: 600;
+   font-family: sans-serif;
+   
+  }
+  /* ********** Slide Css */
+
+  /* src/SlidingBar.css */
+.sliding-bar {
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s ease;
+  }
+  
+  .sliding-bar.filled {
+    background-color: darkblue;
+  }
+  
+  .bar-elements {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .bar-element {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
+
+  /* ********* */
+
+  /* src/RotatingCircle.css */
+.rotating-circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px dotted #333;
+    margin: 50px auto;
+    animation: rotate 5s linear infinite;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 30PXpx;
+    height: 30PXpx;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .element {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  #element1 {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #element2 {
+    top: 30%;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+  
+  #element3 {
+    top: 70%;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+  
+   #element4 {
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
+  
+  #element5 {
+    top: 30%;
+    left: 20%;
+    transform: translateX(-50%);
+  } 
+  
+   #element6 {
+    top: 10%;
+    left: 70%;
+    transform: translateX(-50%);
+  } 
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+/* 88888 Awards css */
+.awards img{
+height: 100px;
+width: 100px;
+}
+.awards{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.row-award{
+    background-color: #f3e5e5;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.carousel-indicators button{
+    border: none;
+}
+/* **Row Services css */
+
+.our-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: bold;
+    
+}
+
+.rotating-circle img{
+    height: 45px;
+    width: 45px;
+}
+/* **** technology */
+.technology{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.technology-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
