@@ -11,7 +11,10 @@ import arrow from "../Images/circle-arrows.png"
 import Awards from './Awards';
 import Circle from './Circle';
 import Technology from './Technology';
-import Navigater from './Navigater';
+import CardForm from "./CardForm"
+// import Navigater from './Navigater';
+import Patners from './Patners';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -54,7 +57,10 @@ function Home() {
     <Awards/>
     <Circle/>
     <Technology/>
-    <Navigater/>
+    <Patners/>
+    <CardForm/>
+    <Footer/>
+    {/* <Navigater/> */}
   </>
   )
 }

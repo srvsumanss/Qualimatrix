@@ -205,3 +205,61 @@ width: 100px;
     justify-content: center;
     
 }
+.card {
+
+  transition: transform 0.3s ease;
+}
+
+.highlightable:hover {
+  transform: scale(1.1);
+}
+.patners{
+  margin-top: 40px;
+}
+.patners img{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media img{
+  height: 35px;
+  width: 35px;
+  /* align-items: center;
+  display: flex;
+  justify-content: space-around; */
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 35px;
+  background-color: rgb(230, 237, 244);
+  margin-bottom: 20px;
+}
+.footerData{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+margin-top: 10px;
+font-size: small;
+border: none;
+background-color: rgb(230, 237, 244);
+}
+
+
+.grid-with-vertical-line {
+  /* Optional: Add padding for better spacing */
+  padding: 15px;
+}
+
+.vertical-line {
+  border-left: 1px solid #ddd; /* Add a vertical border between columns */
+  padding-left: 15px; /* Optional: Add padding to columns for better spacing */
+}
