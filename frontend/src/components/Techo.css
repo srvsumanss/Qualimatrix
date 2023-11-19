@@ -1,0 +1,164 @@
+.technology-div {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    /* background: #252b33; */
+    color: #252b33; 
+    padding: 20px; /* Add padding as needed */
+   
+  }
+
+
+.ContainerRow {
+   
+    background-color: #eaefff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  
+  .CustomCol {
+    border-radius: 40px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .Selected {
+    background-color: #ffffff;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .ContainerRow {
+      flex-direction: column;
+      align-items: stretch;
+      height: auto; /* Adjust height as needed */
+    }
+  
+    .CustomCol {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  /* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  } */
+  
+ 
+  .ContainerRow {
+    background-color: #eaefff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  
+  .CustomCol {
+    border-radius: 40px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .Selected {
+    background-color: #ffffff;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .ContainerRow {
+      flex-direction: column;
+      align-items: stretch;
+      height: auto; /* Adjust height as needed */
+    }
+  
+    .CustomCol {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    margin-top: 60px;
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.3s;
+    border-right:2px solid orange; /* Orange border color */
+    border-bottom: 2px solid orange; /* Orange border color */
+  }
+  .grid-item img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 70px;
+   padding: 10px;
+    margin: auto;
+    object-fit: cover;
+  }
+  .grid-item img.colored-image {
+    filter: grayscale(0%); /* Remove grayscale effect to show color */
+    border: 2px solid #ff6600; /* Add a border to indicate the clicked state */
+  }
+  .grid-item.clicked img {
+    filter: grayscale(0%);
+  }
+  
+  /* Remove right border on the last column */
+  /* .grid-item:last-child {
+    border-right: none;
+  } */
+  .grid-container > :nth-child(5n) {
+    border-right: none;
+  }
+  
+  /* Remove bottom border on the last row */
+  .grid-container > :nth-last-child(-n + 5) {
+    border-bottom: none;
+  }
+  /* Remove bottom border on the last row */
+  /* .grid-container > :nth-child(5n) {
+    border-bottom: none;
+  } */
+  
+  /* Media query for smaller screens in the grid */
+  @media (max-width: 768px) {
+    .grid-item {
+      border-right: none;
+    }
+  
+    .grid-container > :nth-child(5n) {
+      border-right: none;
+    }
+  
+    .grid-container > :nth-last-child(-n + 5) {
+      border-bottom: none;
+    }
+  }

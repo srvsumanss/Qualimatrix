@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
      <Navbar>
-        <Container className='navbar-container'>
+        <Container fluid className='navbar-container'>
           <Navbar.Brand className='header' to="/">
             <img style={{width:"240px",height:"80px"}}  src={qualimatrix} alt='/'/>
           </Navbar.Brand>

@@ -20,7 +20,9 @@
 
 }
 .container-header{
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    width: 100%;
+  
     
 }
 .body-text{
@@ -48,6 +50,9 @@
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
+  }
+  .home-background{
+    width: 100%;
   }
 
   .arrow-area Button{
@@ -198,10 +203,11 @@ width: 100px;
 }
 .row-award{
     background-color: #f3e5e5;
-    width: 80%;
+    width: 70%;
+    height: 100%;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    justify-content: center;
 }
 
 .carousel-indicators button{
@@ -234,6 +240,10 @@ width: 100px;
     align-items: center;
     justify-content: center;
     
+}
+.carouselImage img{
+  height: 90px;
+  width: 90px;
 }
 .card {
 

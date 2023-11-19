@@ -8,23 +8,22 @@ import "../components/Header.css";
 
 function Awards() {
   return (
-    <Container className="awards">
+    <Container fluid className="awards">
       <Row  className="row-award">
         <Col 
           style={{
-            backgroundColor: "#33C1FE",
+            backgroundColor: "#0159DC",
             color: "white",
             display: "flex",
             alignItems: "center,",
-            justifyContent: "center",
-           
-             borderRadius: "0px 80px 80px 0px"
+            justifyContent: "center", 
+             borderRadius: "20px 80px 80px 20px"
 
           }}
         >
           <h1 style={{marginLeft:"20px"}}>AWARDS & RECOGNITION</h1>
         </Col>
-        <Col>
+        <Col  className="carouselImage">
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <img className="w-10" src={logo} alt="First slide" />

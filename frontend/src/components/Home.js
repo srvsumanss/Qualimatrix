@@ -11,14 +11,14 @@ import Awards from "./Awards";
 import Circle from "./Circle";
 import Technology from "./Technology";
 import CardForm from "./CardForm";
-import Patners from "./Patners";
+// import Patners from "./Patners";
 import Footer from "./Footer";
 
 function Home() {
   return (
     <>
       <Navbar />
-      <Container className="container-header">
+      <Container fluid className="container-header">
         <Row className="home-background">
           <Col >
             <div className="" style={{ marginTop: "70px" }}>
@@ -34,7 +34,7 @@ function Home() {
                 >
                   <h1 className="title">
                     LEVERAGE THE POWER OF QA SERVICES WITH
-                  </h1>{" "}
+                  </h1>
                   <span className="testing">TESTING EXPERTS</span>
                 </Card.Title>
                 <Card.Text className="body-text">
@@ -79,7 +79,7 @@ function Home() {
       <Awards />
       <Circle />
       <Technology />
-      <Patners />
+      {/* <Patners /> */}
       <CardForm />
       <Footer />
       {/* <Navigater/> */}

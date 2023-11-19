@@ -14,12 +14,14 @@ const CardForm = () => {
 
   return (
     <>
-    <Card style={{display:"flex",justifyContent:"center",alignItems:"center" ,border:"none"}}>
+   <Container>
+   <Card style={{display:"flex",justifyContent:"center",alignItems:"center" ,border:"none"}}>
       <Card.Body>
-        <Card.Title style={{display:"flex",justifyContent:"center",alignContent:"center",marginTop:"40px"}}><h1>Card with Form</h1></Card.Title>
+        <Card.Title style={{display:"flex",justifyContent:"center",alignContent:"center",marginTop:"40px"}}><h1>Contact Us</h1></Card.Title>
         <CardBody><p>It's good to reconsider decission while spending Money , But Too much Re-consideration can make your Business Suffer So fill the form ASAP !!</p></CardBody> 
       </Card.Body>
     </Card>
+   </Container>
 
     <Container className='form-container' style={{display:"flex",gap:"20px"}}>
         <Col>
@@ -37,11 +39,6 @@ const CardForm = () => {
            
            <Form.Control type="attachment" placeholder="Attachment" />
          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="formMessage">
-            <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} placeholder="Type your message here" />
-          </Form.Group>
           
         </Form>
         </Col>
@@ -63,7 +60,7 @@ const CardForm = () => {
 
     </Container>
 
-    <Container style={{height:"90px",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"blue",borderRadius:"45px 45px 45px 45px"}}>
+    <Container fluid style={{height:"90px",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"blue",borderRadius:"45px 45px 45px 45px", width:"70%",marginTop:"30px"}}>
       
         <Col style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"20px",color:"white",fontWeight:"bold"}}>
         <img style={{width:"35px",height:"35px"}} src={phone} alt='pic.jpg' />
