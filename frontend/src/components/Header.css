@@ -10,12 +10,27 @@
 .navbar-container{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 60px;
 }
 .testing{
-    color: blue;
+    color:#0159DC;
+    font-size:30px;
+    font-weight: 600;
+
 }
 .container-header{
-    margin-top: 30px;
+    margin-top: 20px;
+    
+}
+.body-text{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212529;
+  font-family:sans-serif;
+  word-wrap: inherit;
+  padding: 20px;
 }
 .title-data{
     display: inline-block;
@@ -26,7 +41,8 @@
     white-space: nowrap;
     animation: 
       typing 3s forwards;
-    font-size: 1.6rem;
+    font-size:30px;
+    font-weight: 600;
     width: 0;
   }
   @keyframes typing {
@@ -51,10 +67,24 @@
     position: relative;
     transition: background-color 0.5s ease;
   }
+
+
   
   .sliding-bar.filled {
-    background-color: darkblue;
+    background-color:#0159DC;
   }
+  .conainer-header{
+    height: 550px;
+    width: 100%;
+    /* background-color: brown; */
+    /* background-image: url("../Images/backgroundImage.png"); */
+}
+.hireText{
+  font-weight: 400;
+  font-size: "24px";
+  line-height: 36px;
+  font-family: sans-serif;
+}
   
   .bar-elements {
     display: flex;

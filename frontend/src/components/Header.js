@@ -1,30 +1,26 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import control from "../Images/controls.png"
+import Component4 from "../Images/Component4.png"
+import qualimatrix from "../Images/qualimatrix.png"
 import '../components/Header.css'
 function Header() {
   return (
     <>
-     <Navbar className="bg-body-tertiary">
+     <Navbar>
         <Container className='navbar-container'>
-          <Navbar.Brand className='header' to="/"><span className='logo'>Q</span>uali<span className='logo'>M</span>atrix</Navbar.Brand>
-          <Navbar.Brand className='' to="">Hire Resource   
-          <span>
-             <img src={control} style={{height:"30px",width:"30px",marginLeft:"15px"}} alt='pic.jpg' />
+          <Navbar.Brand className='header' to="/">
+            <img style={{width:"240px",height:"80px"}}  src={qualimatrix} alt='/'/>
+          </Navbar.Brand>
+          <Navbar.Brand to="">Hire Resource   
+          <span >
+             <img className='toggler' style={{height:"50px",weight:"50px"}} src={Component4} alt='pic.jpg'/>
           </span>
           </Navbar.Brand>
-          
-
         </Container>
       </Navbar>
-  
-     
-     
-      
-  
+
     </>
   )
 }
-
 export default Header;

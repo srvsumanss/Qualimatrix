@@ -12,7 +12,7 @@ function Awards() {
       <Row  className="row-award">
         <Col 
           style={{
-            backgroundColor: "#083C74",
+            backgroundColor: "#33C1FE",
             color: "white",
             display: "flex",
             alignItems: "center,",
