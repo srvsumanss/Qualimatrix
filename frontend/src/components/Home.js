@@ -33,7 +33,8 @@ function Home() {
                   }}
                 >
                   <h1 className="title">
-                    LEVERAGE THE POWER OF QA SERVICES WITH
+                    LEVERAGE THE POWER OF
+                     QA SERVICES WITH
                   </h1>
                   <span className="testing">TESTING EXPERTS</span>
                 </Card.Title>

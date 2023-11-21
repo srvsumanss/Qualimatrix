@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Techo.css";
 import image1 from "./TechnologyImage/image1.png";
@@ -34,23 +34,13 @@ const images = [
   image14,
   image15,
 ];
-const GridItem = ({ imageUrl, onClick, onHover, onHoverEnd, isClicked }) => (
-  <div
-    className={`grid-item ${isClicked ? "clicked" : ""}`}
-    onClick={onClick}
-    onMouseEnter={onHover}
-    onMouseLeave={onHoverEnd}
-  >
-    <img
-      src={imageUrl}
-      alt="Grid Item"
-      style={{ filter: isClicked ? "grayscale(0%)" : "grayscale(100%)" }}
-    />
-  </div>
-);
+
+
 function Technology() {
   const [selectedCol, setSelectedCol] = useState(null);
   const [clickedItems, setClickedItems] = useState([]);
+  const [hover, sethover] = useState(false)
+  const [selectedIndex ,setSelectedIndex] = useState(-1);
 
   const toggleColor = (index) => {
     setClickedItems((prevClickedItems) => {
@@ -64,10 +54,39 @@ function Technology() {
   };
   const [hoveredItems, setHoveredItems] = useState([]);
 
+
+  const GridItem = ({ imageUrl, onClick, onHover, onHoverEnd, isClicked, index }) => (
+    <div
+      className={`grid-item ${isClicked ? "clicked" : ""}`}
+      onClick={onClick}
+      onMouseEnter={() => setSelectedIndex(index) }
+      onMouseLeave={() => setSelectedIndex(index)}
+    >
+      <img
+        src={imageUrl}
+        alt="Grid Item"
+        style={{
+          filter: isClicked ? "grayscale(0%)" : "grayscale(100%)",
+          transform:  selectedIndex === index ? "scale(1.5)" : "scale(1.0)",
+          transition: "transform 1.2s ease", // Add a smooth transition
+          cursor:"pointer"
+        }}
+      />
+    </div>
+  );
+
+  // const handleHover = (index) => {
+  //   setHoveredItems((prevHoveredItems) => {
+  //     const newHoveredItems = [...prevHoveredItems];
+  //     newHoveredItems[index] = true;
+  //     return newHoveredItems;
+  //   });
+  // };
   const handleHover = (index) => {
     setHoveredItems((prevHoveredItems) => {
       const newHoveredItems = [...prevHoveredItems];
       newHoveredItems[index] = true;
+      // alert(newHoveredItems)
       return newHoveredItems;
     });
   };
@@ -90,7 +109,7 @@ function Technology() {
       >
         <Row>
           {" "}
-          <div class="technology-div">TECHNOLOGY</div>
+          <div className="technology-div">TECHNOLOGY</div>
         </Row>
       </Container>
       <Container className="technology-p">
@@ -164,9 +183,10 @@ function Technology() {
             key={index}
             imageUrl={imageUrl}
             onClick={() => toggleColor(index)}
-            onHover={() => handleHover(index)}
+            // onHover={() => handleHover(index)}
             onHoverEnd={() => handleHoverEnd(index)}
             isClicked={clickedItems[index]}
+            index = {index}
           />
         ))}
       </Container>
